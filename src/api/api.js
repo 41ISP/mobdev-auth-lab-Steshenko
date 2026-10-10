@@ -17,8 +17,13 @@ const loginUser = async (user) => {
     return res
 }
 
+const getItems = async () => {
+    const res = await apiInstance.get("/items")
+    return res
+}
 
 export const api = {
     registerUser,
-    loginUser
+    loginUser,
+    getItems
 }
